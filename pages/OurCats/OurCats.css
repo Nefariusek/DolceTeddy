@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet');
+body
+{
+    font-family: 'Balsamiq Sans', cursive;
+    background-image: url("../../img/tlo.png");
+    margin: 0px;
+    font-size: 20px;
+}
+    
+
+@media(min-width:900px){
+.container-all{
+    font-size: 22px;
+    max-width: 80vw;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 130vh;
+ 
+}
+
+
+.container-content{
+   
+    min-height: 120vh;
+    min-height: 220vh;
+    min-width: 56vw;
+    max-width: 56vw;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin-right: 3vw;
+   float: left;
+    border: 2px double #ccc;
+    margin-bottom: 10vh;
+   
+}
+.container-content h1{
+   
+ margin-left: 30px;
+   
+}
+.container-extra{
+
+    width: 300px;
+    max-width: 20vw;
+    min-width: 20vw;
+    display: block;
+    min-height: 120vh;
+   float: left;
+    background-color: rgb(255, 255, 255);
+    border: 2px double #ccc;
+    
+}
+.facebook{
+    max-width: 18vw;
+    min-width: 18vw;
+    min-height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+   
+}
+.container-extra-text{
+
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px double #ccc;
+}
+}
+
+
+
+@media(max-width:900px){
+    .container-all{
+        font-size: 22px;
+        max-width: 80vw;
+        margin-top: 6vh;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 130vh;
+     
+    }
+    
+    
+    .container-content{
+       
+        margin-top: 10px;
+        min-height: 120vh;
+        min-height: 220vh;
+        width: 100%;
+        display: block;
+        background-color: rgb(255, 255, 255);
+        margin-right: 3vw;
+       float: left;
+        border: 2px double #ccc;
+        margin-bottom: 10vh;
+       
+    }
+    .container-content h1{
+       
+     margin-left: 30px;
+       
+    }
+    .container-extra{
+    
+        width: 300px;
+       width: 100%;
+        
+        margin-right: auto;
+        margin-left: auto;
+        min-height: 220vh;
+        max-height: 220vh;
+       float: left;
+        background-color: rgb(255, 255, 255);
+        border: 2px double #ccc;
+        
+    }
+    .facebook{
+        width: 90%;
+        min-height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+       
+    }
+    .container-extra-text{
+    
+        font-size: 24px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px double #ccc;
+    }
+    }
