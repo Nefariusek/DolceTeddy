@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { FacebookProvider, Page } from 'react-facebook';
+
 import './OurCats.css';
 
-import { FacebookProvider, Page } from 'react-facebook';
 export default class OurCatsContent extends Component {
 	render() {
 		return (

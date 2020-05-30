@@ -8,6 +8,7 @@ class NavBar extends Component {
 	state = {
 		isExpanded: false,
 	};
+	
 	handleToggle(e) {
 		e.preventDefault();
 		this.setState({
@@ -31,16 +32,16 @@ class NavBar extends Component {
 						</h1>
 						<ul className={`collapsed ${this.state.isExpanded ? 'is-expanded' : ''}`}>
 							<li>
-								<a href="#">Home</a>
+								<a href="/">Home</a>
 							</li>
 							<li>
-								<a href="#">Kontakt</a>
+								<a href="/contact">Kontakt</a>
 							</li>
 							<li>
 								<a href="#">Nasza hodowla</a>
 							</li>
 							<li>
-								<a href="#">Nasze koty</a>
+								<a href="/ourcats">Nasze koty</a>
 							</li>
 							<li>
 								<a href="#">Nasze mioty</a>

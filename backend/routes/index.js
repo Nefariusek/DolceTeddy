@@ -34,6 +34,7 @@ exports = module.exports = (app) => {
 			<html>
 				<head>
 					<title>Dolce Teddy</title>
+					<base href="/" />
 				</head>
 				<body>
 					<div class="root">
@@ -43,6 +44,28 @@ exports = module.exports = (app) => {
 				</body>
 			</html>
 		`;
+		};
+		res.send(renderFullPage());
+	});
+
+	//app.get('/cats/', keystone.middleware, routes.cats);
+	app.get('/ourcats', (req, res) => {
+		renderFullPage = () => {
+			return `
+				<!doctype html>
+				<html>
+					<head>
+						<title>Dolce Teddy</title>
+						<base href="/ourcats" />
+					</head>
+					<body>
+						<div class="root">
+						yo
+						</div>
+						<script src="bundle.js"></script>
+					</body>
+				</html>
+			`;
 		};
 		res.send(renderFullPage());
 	});

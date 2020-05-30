@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 	mode: 'development',
-	entry: './frontend/index.jsx',
+	entry: './frontend/src/index.jsx',
 	output: {
 		path: path.join(__dirname, '/backend/public/js/'),
 		filename: 'bundle.js',
@@ -17,8 +17,21 @@ module.exports = {
 					loader: 'babel-loader',
 					options: {
 						presets: ['@babel/preset-react', '@babel/preset-env'],
+						plugins: ['@babel/plugin-proposal-class-properties'],
 					},
 				},
+			},
+			{
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader'],
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+					},
+				],
 			},
 		],
 	},

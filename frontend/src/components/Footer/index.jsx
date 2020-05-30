@@ -23,13 +23,13 @@ export default class index extends Component {
 						<h2>Szybki dostęp</h2>
 						<br />
 						<ul>
-							<a href="#">
+							<a href="/">
 								<li>Home</li>
 							</a>
 							<a href="#">
 								<li>Nasza hodowla</li>
 							</a>
-							<a href="#">
+							<a href="/ourcats">
 								<li>Nasze koty</li>
 							</a>
 							<a href="#">
