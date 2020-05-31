@@ -1,0 +1,22 @@
+.content {
+	position: absolute;
+	height: 85%;
+	width: 100%;
+	border-top: 3px solid #ffae6b;
+	box-sizing: border-box;
+}
+.title {
+	position: absolute;
+	width: 30%;
+	height: 11%;
+	left: 3%;
+	top: 8%;
+	text-align: left;
+	border-bottom: 3px solid #5db38f;
+	color: #5db38f;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: auto;
+}
