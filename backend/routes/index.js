@@ -68,6 +68,46 @@ exports = module.exports = (app) => {
 		};
 		res.send(renderFullPage());
 	});
+	app.get('/contact', (req, res) => {
+		renderFullPage = () => {
+			return `
+			<!doctype html>
+			<html>
+				<head>
+					<title>Dolce Teddy</title>
+					<base href="/contact" />
+				</head>
+				<body>
+					<div class="root">
+					yo
+					</div>
+					<script src="bundle.js"></script>
+				</body>
+			</html>
+		`;
+		};
+		res.send(renderFullPage());
+	});
+	app.get('/aboutus', (req, res) => {
+		renderFullPage = () => {
+			return `
+			<!doctype html>
+			<html>
+				<head>
+					<title>Dolce Teddy</title>
+					<base href="/aboutus" />
+				</head>
+				<body>
+					<div class="root">
+					yo
+					</div>
+					<script src="bundle.js"></script>
+				</body>
+			</html>
+		`;
+		};
+		res.send(renderFullPage());
+	});
 };
 // 	// Next request handler
 // 	const handle = nextApp.getRequestHandler();

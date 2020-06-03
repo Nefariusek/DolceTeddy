@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import './Footer.css';
-import logo from '../../img/logo.png';
+//import logo from '../../img/logo.png';
 export default class index extends Component {
 	render() {
 		return (
 			<div className="footer">
 				<div className="footer-content">
 					<div className="footer-section about">
-						<img src={logo} alt="logo" style={{ color: 'white', filter: 'invert(1)', width: '18vw' }}></img>
+						<img
+							src="https://res.cloudinary.com/dhqxcq0je/image/upload/v1591144785/logo_spjxxy.png"
+							alt="logo"
+							style={{ color: 'white', filter: 'invert(1)', width: '18vw' }}
+						></img>
 						<p>Hodowla Święty Kot Birmański</p>
 						<p>[jakis krotki opis tutaj]</p>
 						<br />

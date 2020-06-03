@@ -7,4 +7,7 @@ Comment.add({
 	author: { type: String, required: true, default: 'Anonymous' },
 	description: { type: String, required: true, default: 'Comment' },
 	publishedDate: { type: Date, default: Date.now },
+	showComment: { type: Boolean, default: false },
 });
+
+Comment.register();

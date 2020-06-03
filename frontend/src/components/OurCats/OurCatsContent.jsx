@@ -3,9 +3,14 @@ import axios from 'axios';
 import { FacebookProvider, Page } from 'react-facebook';
 
 import './OurCats.css';
+import CatsTable from './CatsTable.jsx';
 
 export default class OurCatsContent extends Component {
-	state = {};
+	state = {
+		results: [],
+	};
+
+	catsTableRef = React.createRef();
 
 	getCats = async () => {
 		await axios({
@@ -14,6 +19,7 @@ export default class OurCatsContent extends Component {
 		}).then(
 			(res) => {
 				console.log(res);
+				this.setState({ results: res.data.cat });
 			},
 			(err) => {
 				console.log(err);
@@ -22,7 +28,12 @@ export default class OurCatsContent extends Component {
 	};
 
 	componentDidMount() {
+		console.log(this.state.results);
 		this.getCats();
+	}
+
+	componentDidUpdate() {
+		this.catsTableRef.current.setState({ results: this.state.results });
 	}
 
 	render() {
@@ -31,6 +42,7 @@ export default class OurCatsContent extends Component {
 				<div className="container-all">
 					<div className="container-content">
 						<h1>Nasze koty</h1>
+						<CatsTable ref={this.catsTableRef} />
 					</div>
 					<div className="container-extra">
 						{' '}

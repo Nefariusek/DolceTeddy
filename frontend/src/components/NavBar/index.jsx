@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../img/logo.png';
-import bars from '../../img/bars.png';
+//import logo from '../../img/logo.png';
+//import bars from '../../img/bars.png';
 
 import './NavBar.css';
 
@@ -23,11 +23,19 @@ class NavBar extends Component {
 				<div class="container">
 					<nav className="nav">
 						<i className="fa fa-bars" aria-hidden="true" onClick={(e) => this.handleToggle(e)}>
-							<img src={bars} alt="logo" style={{ width: '50px', height: '40px', margin: '10px' }} />
+							<img
+								src="https://res.cloudinary.com/dhqxcq0je/image/upload/v1591144785/bars_cxle0k.png"
+								alt="logo"
+								style={{ width: '50px', height: '40px', margin: '10px' }}
+							/>
 						</i>
 						<h1 class="brand">
-							<a href="index.html">
-								<img src={logo} alt="logo" style={{ width: '220px', height: '40px', margin: '10px' }}></img>
+							<a href="/">
+								<img
+									src="https://res.cloudinary.com/dhqxcq0je/image/upload/v1591144785/logo_spjxxy.png"
+									alt="logo"
+									style={{ width: '220px', height: '40px', margin: '10px' }}
+								></img>
 							</a>
 						</h1>
 						<ul className={`collapsed ${this.state.isExpanded ? 'is-expanded' : ''}`}>
