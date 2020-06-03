@@ -26,7 +26,7 @@ export default class index extends Component {
 							<a href="/">
 								<li>Home</li>
 							</a>
-							<a href="#">
+							<a href="/aboutus">
 								<li>Nasza hodowla</li>
 							</a>
 							<a href="/ourcats">

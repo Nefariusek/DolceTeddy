@@ -8,7 +8,7 @@ class NavBar extends Component {
 	state = {
 		isExpanded: false,
 	};
-	
+
 	handleToggle(e) {
 		e.preventDefault();
 		this.setState({
@@ -38,7 +38,7 @@ class NavBar extends Component {
 								<a href="/contact">Kontakt</a>
 							</li>
 							<li>
-								<a href="#">Nasza hodowla</a>
+								<a href="/aboutus">Nasza hodowla</a>
 							</li>
 							<li>
 								<a href="/ourcats">Nasze koty</a>

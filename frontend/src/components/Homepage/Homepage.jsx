@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Homepage.css';
-import middleHigherPhoto from '../img/middleHigher.jpg';
-import middleLowerPhoto from '../img/middleLower.jpg';
-import leftPhoto from '../img/left.jpg';
-import rightPhoto from '../img/right.jpg';
+import middleHigherPhoto from '../../img/middleHigher.jpg';
+import middleLowerPhoto from '../../img/middleLower.jpg';
+import leftPhoto from '../../img/left.jpg';
+import rightPhoto from '../../img/right.jpg';
 
 export class Homepage extends Component {
 	render() {
