@@ -21,12 +21,12 @@
 const keystone = require('keystone');
 const importRoutes = keystone.importer(__dirname);
 const routes = {
-	api: importRoutes('./'),
+	api: importRoutes('./api'),
 };
 
 // Setup Route Bindings
 exports = module.exports = (app) => {
-	//app.get('/cats/', keystone.middleware, routes.cats);
+	app.get('/api/cat/', keystone.middleware.api, routes.api.cat.list);
 	app.get('/', (req, res) => {
 		renderFullPage = () => {
 			return `
@@ -48,7 +48,6 @@ exports = module.exports = (app) => {
 		res.send(renderFullPage());
 	});
 
-	//app.get('/cats/', keystone.middleware, routes.cats);
 	app.get('/ourcats', (req, res) => {
 		renderFullPage = () => {
 			return `

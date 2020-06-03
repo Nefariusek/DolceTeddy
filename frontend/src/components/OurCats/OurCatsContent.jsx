@@ -1,9 +1,30 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { FacebookProvider, Page } from 'react-facebook';
 
 import './OurCats.css';
 
 export default class OurCatsContent extends Component {
+	state = {};
+
+	getCats = async () => {
+		await axios({
+			url: 'api/cat',
+			method: 'GET',
+		}).then(
+			(res) => {
+				console.log(res);
+			},
+			(err) => {
+				console.log(err);
+			},
+		);
+	};
+
+	componentDidMount() {
+		this.getCats();
+	}
+
 	render() {
 		return (
 			<div>
