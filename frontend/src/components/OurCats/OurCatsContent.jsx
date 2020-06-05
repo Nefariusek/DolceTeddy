@@ -18,7 +18,6 @@ export default class OurCatsContent extends Component {
 			method: 'GET',
 		}).then(
 			(res) => {
-				console.log(res);
 				this.setState({ results: res.data.cat });
 			},
 			(err) => {
@@ -28,7 +27,6 @@ export default class OurCatsContent extends Component {
 	};
 
 	componentDidMount() {
-		console.log(this.state.results);
 		this.getCats();
 	}
 

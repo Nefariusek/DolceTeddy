@@ -13,11 +13,6 @@ class CatsTable extends React.Component {
 		});
 	};
 
-	componentDidMount() {
-		console.log('sth');
-		console.log(this.state.results);
-	}
-
 	render() {
 		return <div>{this.arrayToTable(this.state.results)}</div>;
 	}

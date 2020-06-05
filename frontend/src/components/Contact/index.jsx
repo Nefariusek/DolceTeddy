@@ -1,12 +1,10 @@
 import React from 'react';
+import ContactContent from './ContactContent.jsx';
 
 const Contact = () => {
 	return (
 		<div>
-			<div>Contact</div>
-			<div>Contact</div>
-			<div>Contact</div>
-			<div>Contact</div>
+			<ContactContent />
 		</div>
 	);
 };
